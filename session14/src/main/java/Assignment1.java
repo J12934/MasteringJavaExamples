@@ -1,3 +1,4 @@
+import java.util.Optional;
 
 /* Assignment 1
 Convert the Optional by using the methods provided by the Optional class. Implement the following computations (in the given order):
@@ -9,6 +10,12 @@ Convert the Optional by using the methods provided by the Optional class. Implem
     - if no value is present print out "out of range"
  */
 
+
+
 public class Assignment1 {
-    
+    public static void main (String args[]){
+        System.out.println("Test");
+        Optional<Object> optObject = Optional.of(1);
+
+    }
 }
