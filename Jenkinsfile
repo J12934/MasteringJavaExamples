@@ -10,6 +10,8 @@ pipeline {
 		stage ('Build'){
 			steps {
 				echo 'Building..'
+				sh './gradlew clean'
+				sh './gradlew assemble'
 			}
 		}
 		stage ('Parallel Stage'){
