@@ -1,5 +1,5 @@
 pipeline {
-	agent { label 'any' }
+	agent any
 	environment { 
         AUTHOR_NAME = bat (
 			  script: "git show -s --format='%%an' HEAD",
