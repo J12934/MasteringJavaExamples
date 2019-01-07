@@ -1,6 +1,6 @@
 pipeline {
-	agents any
-    stages {
+	agent any
+   	stages {
 		stage ('Checkout'){
 			steps {
 				echo 'Starting checkout....'
