@@ -10,9 +10,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building..'
-        sh 'chmod +x ./gradlew'
-        sh './gradlew clean'
-        sh './gradlew assemble'
+        sh 'gradle clean assemble'
       }
     }
     stage('Parallel Stage') {
